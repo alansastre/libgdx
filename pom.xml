@@ -75,6 +75,13 @@
     <module>extensions/gdx-freetype</module>
     <module>extensions/gdx-freetype/jni/maven</module>    
   </modules>
+<dependencies>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+	</dependency>
+</dependencies>
 
   <build>
     <plugins>
