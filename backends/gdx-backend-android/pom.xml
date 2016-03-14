@@ -61,11 +61,15 @@
 	    <artifactId>pitest-maven</artifactId>
 	    <version>1.1.9</version>
          <configuration>
-                        <!-- we want to skip for this module, but    the lack of a 'skip' option requires a work-around -->
-                        <targetTests>
-                            <param>never-match-any-class!!</param>
-                        </targetTests> <!-- skip module with no tests -->
-                        <failWhenNoMutations>false</failWhenNoMutations>
+		<skip>true</skip>
+        	<targetClasses>
+	            <param>com.badlogic.gdx.backends.android.*</param>
+	        </targetClasses>
+		<failWhenNoMutations>false</failWhenNoMutations>
+	            <outputFormats>
+	                <outputFormat>XML</outputFormat>
+	                <outputFormat>HTML</outputFormat>                      
+	            </outputFormats>   
          </configuration>
 	</plugin>
         
