@@ -37,6 +37,13 @@
 		<optional>true</optional>
 	  </dependency>
   </dependencies>
+  
+  <properties>
+  	
+  	<maven.test.skip>true</maven.test.skip>
+  
+  
+  </properties>
 
   <build>
     <sourceDirectory>src</sourceDirectory>
