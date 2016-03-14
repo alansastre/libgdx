@@ -99,6 +99,15 @@
 	                <outputFormat>HTML</outputFormat>                      
 	            </outputFormats>   
 	    </configuration>
+	    	<executions>
+		<execution>
+			<id>pit-execute-mutation-coverage</id>
+			<phase>verify</phase>
+			<goals>
+				<goal>mutationCoverage</goal>
+			</goals>
+		</execution>
+		</executions>
 	</plugin>
     	        <plugin>
             <groupId>org.jacoco</groupId>
